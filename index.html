@@ -148,13 +148,12 @@ footer p{font-family:"Space Mono",monospace;font-size:10px;color:var(--muted);le
 }
 
 .resume-section{padding:80px 60px}
-.resume-layout{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
 .resume-embed{width:100%;height:680px;border:1px solid var(--border);border-radius:4px;display:block}
 .resume-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
-.resume-sidebar{display:flex;flex-direction:column;gap:24px}
-.linkedin-wrap{border:1px solid var(--border);border-radius:4px;padding:16px;background:var(--surface)}
-.linkedin-wrap h4{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
-@media(max-width:900px){.resume-layout{grid-template-columns:1fr}.resume-embed{height:500px}}
+.linkedin-preview{margin-top:64px}
+.linkedin-preview-label{font-family:"Space Mono",monospace;font-size:11px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+.linkedin-badge-outer{display:flex;justify-content:center;align-items:center;padding:72px 40px;border:1px solid var(--border);border-radius:4px;background:var(--surface);min-height:420px}
+@media(max-width:900px){.resume-embed{height:500px}.linkedin-badge-outer{padding:48px 20px;min-height:320px}}
 
 /* ── Colorblind & accessibility improvements ── */
 /* Underline all text links so they're distinguishable without color */
@@ -516,22 +515,18 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
     <h2 class="section-title">Resume</h2>
     <div class="section-line"></div>
   </div>
-  <div class="resume-layout">
-    <div>
-      <object class="resume-embed" data="Hannadige_Dinuka_Resume.pdf" type="application/pdf">
-        <p style="padding:20px;text-align:center">Your browser cannot display PDFs inline. <a href="Hannadige_Dinuka_Resume.pdf" download>Download Resume</a> instead.</p>
-      </object>
-      <div class="resume-actions">
-        <a href="Hannadige_Dinuka_Resume.pdf" download class="btn btn-primary">Download Resume</a>
-        <a href="https://www.linkedin.com/in/dinuka-hannadige" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
-      </div>
-    </div>
-    <div class="resume-sidebar">
-      <div class="linkedin-wrap">
-        <h4>LinkedIn Profile</h4>
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="dinuka-hannadige" data-version="v1">
-          <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dinuka-hannadige?trk=profile-badge">Dinuka Hannadige</a>
-        </div>
+  <object class="resume-embed" data="Hannadige_Dinuka_Resume.pdf" type="application/pdf">
+    <p style="padding:20px;text-align:center">Your browser cannot display PDFs inline. <a href="Hannadige_Dinuka_Resume.pdf" download>Download Resume</a> instead.</p>
+  </object>
+  <div class="resume-actions">
+    <a href="Hannadige_Dinuka_Resume.pdf" download class="btn btn-primary">Download Resume</a>
+    <a href="https://www.linkedin.com/in/dinuka-hannadige" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
+  </div>
+  <div class="linkedin-preview">
+    <div class="linkedin-preview-label">LinkedIn Profile</div>
+    <div class="linkedin-badge-outer">
+      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="dinuka-hannadige" data-version="v1">
+        <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dinuka-hannadige?trk=profile-badge">Dinuka Hannadige</a>
       </div>
     </div>
   </div>
