@@ -114,9 +114,9 @@ section{padding:100px 60px}
 .skill-list li{font-size:14px;color:var(--dim);display:flex;align-items:center;gap:10px}
 .skill-list li::before{content:"";display:block;width:4px;height:4px;background:var(--accent);flex-shrink:0}
 
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.contact-left h3{font-family:"Syne",sans-serif;font-size:32px;font-weight:800;margin-bottom:18px;line-height:1.2}
-.contact-left p{font-size:15px;line-height:1.7;color:var(--dim);margin-bottom:36px}
+.contact-details-only{max-width:560px}
+.contact-details-only h3{font-family:"Syne",sans-serif;font-size:32px;font-weight:800;margin-bottom:18px;line-height:1.2}
+.contact-details-only p{font-size:15px;line-height:1.7;color:var(--dim);margin-bottom:36px}
 .contact-details{display:flex;flex-direction:column;gap:20px}
 .contact-item{display:flex;align-items:center;gap:16px}
 .contact-icon{width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:13px;flex-shrink:0;font-family:"Space Mono",monospace}
@@ -124,10 +124,6 @@ section{padding:100px 60px}
 .ci-value{font-size:14px;color:var(--text)}
 .ci-value a{color:inherit;text-decoration:none}
 .ci-value a:hover{color:var(--accent)}
-.contact-form{display:flex;flex-direction:column;gap:14px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.form-field{display:flex;flex-direction:column;gap:7px}
-.form-field label{font-family:"Space Mono",monospace;font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
 .form-field input,.form-field textarea{background:var(--card);border:1px solid var(--border);color:var(--text);padding:13px 15px;font-family:"DM Sans",sans-serif;font-size:14px;font-weight:300;outline:none;transition:border-color .2s;resize:none;width:100%}
 .form-field input:focus,.form-field textarea:focus{border-color:var(--accent)}
 .form-field textarea{height:120px}
@@ -143,7 +139,7 @@ footer p{font-family:"Space Mono",monospace;font-size:10px;color:var(--muted);le
   .hero{grid-template-columns:1fr}.hero-left{padding:80px 24px 60px}.hero-right{height:280px}.hero-stats{display:none}
   section{padding:60px 24px}.about-grid{grid-template-columns:1fr;gap:40px}.edu-grid{grid-template-columns:1fr}
   .project-body{grid-template-columns:1fr}.project-header{grid-template-columns:auto 1fr}.project-meta{display:none}
-  .skills-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:40px}.form-row{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
   footer{flex-direction:column;gap:10px;text-align:center}
 }
 
@@ -566,25 +562,14 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
     <h2 class="section-title">Contact</h2>
     <div class="section-line"></div>
   </div>
-  <div class="contact-grid">
-    <div class="contact-left">
-      <h3>Let's build something extraordinary together.</h3>
-      <p>I'm open to engineering opportunities, research collaborations, internships, or just connecting with fellow engineers.</p>
-      <div class="contact-details">
-        <div class="contact-item"><div class="contact-icon">✉</div><div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:Dinuka.Hannadige@outlook.com">Dinuka.Hannadige@outlook.com</a></div></div></div>
-        <div class="contact-item"><div class="contact-icon">☏</div><div><div class="ci-label">Phone</div><div class="ci-value">(386) 331-3306</div></div></div>
-        <div class="contact-item"><div class="contact-icon">◎</div><div><div class="ci-label">Location</div><div class="ci-value">Boulder, Colorado</div></div></div>
-        <div class="contact-item"><div class="contact-icon" style="font-size:10px;font-weight:700;">in</div><div><div class="ci-label">LinkedIn</div><div class="ci-value"><a href="https://www.linkedin.com/in/dinuka-hannadige" target="_blank" rel="noopener">linkedin.com/in/dinuka-hannadige</a></div></div></div>
-      </div>
-    </div>
-    <div class="contact-form">
-      <div class="form-row">
-        <div class="form-field"><label>Name</label><input type="text" placeholder="Your name"></div>
-        <div class="form-field"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-      </div>
-      <div class="form-field"><label>Subject</label><input type="text" placeholder="What's this about?"></div>
-      <div class="form-field"><label>Message</label><textarea placeholder="Tell me about your project or opportunity…"></textarea></div>
-      <button class="btn btn-primary" style="width:fit-content;">Send Message →</button>
+  <div class="contact-details-only">
+    <h3>Let's connect.</h3>
+    <p>I'm open to engineering opportunities, research collaborations, internships, or just connecting with fellow engineers.</p>
+    <div class="contact-details">
+      <div class="contact-item"><div class="contact-icon">✉</div><div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:Dinuka.Hannadige@outlook.com">Dinuka.Hannadige@outlook.com</a></div></div></div>
+      <div class="contact-item"><div class="contact-icon">☏</div><div><div class="ci-label">Phone</div><div class="ci-value">(386) 331-3306</div></div></div>
+      <div class="contact-item"><div class="contact-icon">◎</div><div><div class="ci-label">Location</div><div class="ci-value">Boulder, Colorado</div></div></div>
+      <div class="contact-item"><div class="contact-icon" style="font-size:10px;font-weight:700;">in</div><div><div class="ci-label">LinkedIn</div><div class="ci-value"><a href="https://www.linkedin.com/in/dinuka-hannadige" target="_blank" rel="noopener">linkedin.com/in/dinuka-hannadige</a></div></div></div>
     </div>
   </div>
 </section>
