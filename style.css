@@ -202,3 +202,12 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
 .other-projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 @media(max-width:900px){.other-projects-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.other-projects-grid{grid-template-columns:1fr}.other-projects{padding:60px 24px}}
+
+/* ── Projects CTA (index.html) ───────────────────────────────────────── */
+.projects-cta{background:var(--card);padding:120px 60px;text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.projects-cta-inner{max-width:700px;margin:0 auto}
+.projects-cta-label{font-family:"Space Mono",monospace;font-size:11px;color:var(--accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px}
+.projects-cta-heading{font-family:"Syne",sans-serif;font-size:clamp(52px,7vw,96px);font-weight:800;line-height:.95;letter-spacing:-.03em;margin-bottom:28px}
+.projects-cta-sub{font-size:16px;color:var(--dim);line-height:1.7;margin-bottom:48px}
+.projects-cta-btn{font-size:13px;padding:18px 48px;letter-spacing:.12em}
+@media(max-width:768px){.projects-cta{padding:80px 24px}.projects-cta-heading{font-size:clamp(40px,10vw,64px)}}
