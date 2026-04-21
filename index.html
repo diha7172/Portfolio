@@ -11,22 +11,20 @@
 <body>
 <nav>
   <a href="#top" class="nav-logo" style="text-decoration:none">Dinuka Hannadige</a>
-  <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="projects.html">Projects</a></li><li><a href="#resume">Resume</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul>
+  <ul class="nav-links"><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#about">About</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li></ul>
 </nav>
 <div class="hero" id="top">
   <div class="hero-left">
     <div class="hero-tag">Aerospace Engineering Student · CU Boulder</div>
     <h1 class="hero-name">Dinuka<br><span class="blue">Hannadige</span></h1>
-    <p class="hero-desc">Building aircraft, racing cars, and engineering tools from the ground up. I work on propulsion, aerodynamics, and systems integration across competition teams, community projects, and student government.</p>
+    <p class="hero-tagline">Propulsion · Aerodynamics · Systems Integration</p>
     <div class="hero-ctas">
-      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <a href="projects.html" class="btn btn-primary">View Projects →</a>
       <a href="#contact" class="btn btn-outline">Get In Touch</a>
     </div>
-    <div class="hero-nav-pills">
-      <a href="#about" class="pill">About</a>
-      <a href="#education" class="pill">Education</a>
-      <a href="#resume" class="pill">Resume</a>
-      <a href="#contact" class="pill">Contact</a>
+    <div class="hero-scroll-cue">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
     </div>
   </div>
   <div class="hero-right">
@@ -43,9 +41,189 @@
   <span class="ticker-item">CFD Simulation</span><span class="ticker-item">Aerodynamic Design</span><span class="ticker-item">Vehicle Dynamics</span><span class="ticker-item">Propulsion Engineering</span><span class="ticker-item">CATIA V5</span><span class="ticker-item">SolidWorks</span><span class="ticker-item">FSAE Competition</span><span class="ticker-item">AIAA Design Build Fly</span><span class="ticker-item">Structural Testing</span><span class="ticker-item">Systems Integration</span>
   <span class="ticker-item">CFD Simulation</span><span class="ticker-item">Aerodynamic Design</span><span class="ticker-item">Vehicle Dynamics</span><span class="ticker-item">Propulsion Engineering</span><span class="ticker-item">CATIA V5</span><span class="ticker-item">SolidWorks</span><span class="ticker-item">FSAE Competition</span><span class="ticker-item">AIAA Design Build Fly</span><span class="ticker-item">Structural Testing</span><span class="ticker-item">Systems Integration</span>
 </div></div>
+<section class="feat-projects-section" id="projects">
+  <div class="section-header">
+    <span class="section-num">02 /</span>
+    <h2 class="section-title">Technical Projects</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="feat-entry">
+    <div class="feat-entry-left">
+      <div class="feat-num">R.01 &middot; Research &middot; 2025&ndash;2026</div>
+      <h3 class="feat-entry-title">PharmShed<br>Decision Support System</h3>
+      <div class="feat-entry-role">Research Contributor &middot; Machine Learning &amp; Data Engineering<br>CU Boulder</div>
+      <div class="feat-stack">
+        <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">ML-kNN</span><span class="chip">One-vs-Rest SVM</span><span class="chip">pandas</span><span class="chip">pdfplumber</span><span class="chip">OCR / tesseract</span>
+      </div>
+      <a href="projects/pharmshed.html" class="btn btn-outline feat-cta-btn">Full Case Study &rarr;</a>
+    </div>
+    <div class="feat-entry-right">
+      <div class="feat-block">
+        <div class="feat-label">The Problem</div>
+        <p>Wastewater labs cannot affordably measure pharmaceutical concentrations by direct sampling. The research goal: predict them from population demographics alone.</p>
+      </div>
+      <div class="feat-block">
+        <div class="feat-label">My Contribution</div>
+        <ul class="feat-list">
+          <li>Built a synthetic population generator for Clark County, NV using US Census stratified sampling by age, sex, and region</li>
+          <li>Trained ML-kNN and One-vs-Rest SVM classifiers on 217 pharmaceutical compounds, mapping demographics to predicted wastewater concentrations</li>
+          <li>QC-audited 2,647 external validation measurements; built a 200-drug synonym dictionary via regex and OCR pipeline</li>
+        </ul>
+      </div>
+      <div class="feat-block feat-outcome">
+        <div class="feat-label">Outcome</div>
+        <p>Validated ML decision-support tool enabling cost-effective environmental monitoring without direct wastewater sampling across diverse population profiles.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat-entry">
+    <div class="feat-entry-left">
+      <div class="feat-num">P.02 &middot; Aerospace &middot; 2025&ndash;2026</div>
+      <h3 class="feat-entry-title">Colorado Design<br>Build Fly &mdash; v3</h3>
+      <div class="feat-entry-role">Propulsion Engineer<br>CU Boulder AIAA DBF Team</div>
+      <div class="feat-stack">
+        <span class="chip">CATIA V5</span><span class="chip">MATLAB</span><span class="chip">Static Thrust Testing</span><span class="chip">Motor Selection</span><span class="chip">Composite Fabrication</span><span class="chip">Avionics Integration</span>
+      </div>
+      <a href="projects/dbf-v3.html" class="btn btn-outline feat-cta-btn">Full Case Study &rarr;</a>
+    </div>
+    <div class="feat-entry-right">
+      <div class="feat-block">
+        <div class="feat-label">The Problem</div>
+        <p>The AIAA DBF 2026 RFP required a banner-towing bush plane with STOL takeoff, banner deployment, and payload missions &mdash; demanding a fully redesigned propulsion system for a new carbon composite airframe.</p>
+      </div>
+      <div class="feat-block">
+        <div class="feat-label">My Contribution</div>
+        <ul class="feat-list">
+          <li>Re-evaluated motor&ndash;propeller combinations against updated weight and drag estimates from the redesigned wing geometry</li>
+          <li>Contributed to carbon fiber/fiberglass composite wing fabrication; brushless motors mounted at wingtips</li>
+          <li>Led avionics integration through the composite fuselage &mdash; power distribution, ESC routing, and CG placement</li>
+        </ul>
+      </div>
+      <div class="feat-block feat-outcome">
+        <div class="feat-label">Outcome</div>
+        <p>Competition-ready aircraft with validated thrust-to-weight margins for STOL and banner-tow mission profiles, verified through pre-flight systems checks at the airfield.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feat-projects-section feat-alt" id="hardware">
+  <div class="section-header">
+    <span class="section-num">03 /</span>
+    <h2 class="section-title">Hardware &amp; Builds</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="feat-entry">
+    <div class="feat-entry-left">
+      <div class="feat-num">P.04 &middot; Hardware &middot; 2026</div>
+      <h3 class="feat-entry-title">KlisterFixer<br>Heated Wax Applicator</h3>
+      <div class="feat-entry-role">Electronics &amp; Systems Integration<br>CU Boulder GEEN 2400 &middot; CU Nordic Ski Club</div>
+      <div class="feat-stack">
+        <span class="chip">Arduino Nano</span><span class="chip">Altium Designer</span><span class="chip">Fusion 360</span><span class="chip">3D Printing</span><span class="chip">LiPo Battery</span><span class="chip">Bench Validation</span>
+      </div>
+      <a href="projects/klisterfixer.html" class="btn btn-outline feat-cta-btn">Full Case Study &rarr;</a>
+    </div>
+    <div class="feat-entry-right">
+      <div class="feat-block">
+        <div class="feat-label">The Problem</div>
+        <p>Applying Klister ski wax outdoors in freezing conditions with gloves on takes 15&ndash;30 min per person and causes hand contamination. The solution needed to be handheld, battery-powered, and field-operable.</p>
+      </div>
+      <div class="feat-block">
+        <div class="feat-label">My Contribution</div>
+        <ul class="feat-list">
+          <li>Designed temperature-sensing indicator circuit: Arduino Nano + transistor-switched resistive heater + dual-LED feedback (green&nbsp;= ready, yellow&nbsp;= warming)</li>
+          <li>Bench-validated at 11.3 V / 1.13 A / 12.8 W with Keysight power supply and Agilent multimeter; sized 1,500 mAh LiPo for 1-hour field use</li>
+          <li>Iterated 3D-printed housing with the CU Nordic Ski Club across multiple revisions &mdash; trigger geometry, LED placement, and grip ergonomics</li>
+        </ul>
+      </div>
+      <div class="feat-block feat-outcome">
+        <div class="feat-label">Outcome</div>
+        <p>Application time cut from 15&ndash;30 min to under 10 min per person in outdoor field trials; fully operable wearing ski gloves.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat-entry">
+    <div class="feat-entry-left">
+      <div class="feat-num">P.03 &middot; Motorsport &middot; 2023&ndash;2024</div>
+      <h3 class="feat-entry-title">Formula SAE<br>ER-08 Race Car</h3>
+      <div class="feat-entry-role">Aerodynamics &amp; Vehicle Dynamics Engineer<br>ERAU Motorsports</div>
+      <div class="feat-stack">
+        <span class="chip">CFD Simulation</span><span class="chip">Aero Rake Testing</span><span class="chip">Pressure Tapping</span><span class="chip">CATIA V5</span><span class="chip">Suspension Tuning</span>
+      </div>
+      <a href="projects/fsae.html" class="btn btn-outline feat-cta-btn">Full Case Study &rarr;</a>
+    </div>
+    <div class="feat-entry-right">
+      <div class="feat-block">
+        <div class="feat-label">The Problem</div>
+        <p>The FSAE ER-08 needed optimized aerodynamics and suspension dynamics to maximize cornering grip and handling predictability across a competition-spec course.</p>
+      </div>
+      <div class="feat-block">
+        <div class="feat-label">My Contribution</div>
+        <ul class="feat-list">
+          <li>Applied CFD tools to design aero components, targeting improved downforce and reduced drag on the ER-08</li>
+          <li>Developed an aero rake and conducted pressure-tapping tests to correlate CFD predictions against real on-track data</li>
+          <li>Tuned double-wishbone suspension for optimal mechanical grip; supported CDR and early shakedown testing</li>
+        </ul>
+      </div>
+      <div class="feat-block feat-outcome">
+        <div class="feat-label">Outcome</div>
+        <p>Competition-validated aerodynamic package with CFD-to-track correlation confirmed, improving handling predictability before the final event.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="feat-view-all">
+    <a href="projects.html" class="btn btn-outline">View All 5 Projects &rarr;</a>
+  </div>
+</section>
+<section class="skills-section" id="skills">
+  <div class="section-header">
+    <span class="section-num">04 /</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title">Programming &amp; Data Analysis</div>
+      <ul class="skill-list">
+        <li>Python (pandas, scikit-learn, NumPy)</li>
+        <li>MATLAB</li>
+        <li>ML Algorithms (kNN, SVM, One-vs-Rest)</li>
+        <li>OCR Pipelines (pdfplumber, tesseract)</li>
+        <li>Regex Text Mining &amp; Data Normalisation</li>
+        <li>Data Validation &amp; Quality Control</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">CAD &amp; Simulation</div>
+      <ul class="skill-list">
+        <li>CATIA V5</li>
+        <li>SolidWorks</li>
+        <li>Fusion 360</li>
+        <li>OpenSCAD</li>
+        <li>CFD Simulation &amp; Analysis</li>
+        <li>FEA &amp; Structural Testing</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Hardware &amp; Electronics</div>
+      <ul class="skill-list">
+        <li>Arduino Nano (embedded control)</li>
+        <li>Altium Designer (PCB design)</li>
+        <li>Bench Validation (Keysight / Agilent)</li>
+        <li>LiPo Battery Systems</li>
+        <li>3D Printing &amp; Composite Fabrication</li>
+        <li>Avionics &amp; Power Distribution</li>
+      </ul>
+    </div>
+  </div>
+</section>
 <section id="about">
   <div class="section-header">
-    <span class="section-num">01</span>
+    <span class="section-num">05 /</span>
     <h2 class="section-title">About Me</h2>
     <div class="section-line"></div>
   </div>
@@ -65,7 +243,7 @@
 </section>
 <section class="edu-section" id="education">
   <div class="section-header">
-    <span class="section-num">02</span>
+    <span class="section-num">06 /</span>
     <h2 class="section-title">Education</h2>
     <div class="section-line"></div>
   </div>
@@ -87,18 +265,9 @@
   </div>
 </section>
 
-<section class="projects-cta" id="projects">
-  <div class="projects-cta-inner">
-    <div class="projects-cta-label">03 / Projects</div>
-    <h2 class="projects-cta-heading">See what I've built.</h2>
-    <p class="projects-cta-sub">Aircraft, race cars, and engineering tools — 4 projects across aerospace, motorsports, and community design.</p>
-    <a href="projects.html" class="btn btn-primary projects-cta-btn">View Projects →</a>
-  </div>
-</section>
-
 <section class="resume-section" id="resume">
   <div class="section-header">
-    <span class="section-num">04</span>
+    <span class="section-num">07 /</span>
     <h2 class="section-title">Resume</h2>
     <div class="section-line"></div>
   </div>
@@ -118,36 +287,9 @@
     </div>
   </div>
 </section>
-<section class="skills-section" id="skills">
-  <div class="section-header">
-    <span class="section-num">05</span>
-    <h2 class="section-title">Skills</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="skills-grid">
-    <div class="skill-group">
-      <div class="skill-group-title">Software &amp; Design</div>
-      <ul class="skill-list">
-        <li>CATIA V5</li><li>SolidWorks / Fusion 360</li><li>CFD Simulation Tools</li><li>Microsoft Excel (PivotTables, Data Analysis)</li><li>Engineering Database Systems</li><li>Technical Documentation Platforms</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Fabrication &amp; Manufacturing</div>
-      <ul class="skill-list">
-        <li>3D Printing</li><li>Laser Cutting &amp; Waterjet Cutting</li><li>Woodworking &amp; Metal Working</li><li>Composite Fabrication</li><li>Kitting &amp; Assembly Support</li><li>Standard Work Instruction Tools</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Engineering &amp; Professional</div>
-      <ul class="skill-list">
-        <li>Process Mapping &amp; Lean Manufacturing</li><li>Root Cause Analysis</li><li>Inspection Techniques</li><li>Mechanical Drawing Interpretation</li><li>Verbal &amp; Written Technical Communication</li><li>Cross-Functional Collaboration</li>
-      </ul>
-    </div>
-  </div>
-</section>
 <section id="contact">
   <div class="section-header">
-    <span class="section-num">05</span>
+    <span class="section-num">08 /</span>
     <h2 class="section-title">Contact</h2>
     <div class="section-line"></div>
   </div>
