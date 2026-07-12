@@ -216,6 +216,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
 .shot:hover{opacity:.92}
 .shot-fig .img-caption{border:1px solid var(--border);border-top:none;border-radius:0 0 9px 9px}
 .gallery-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;margin-top:4px}
+.gallery-2.gallery-cap .shot{aspect-ratio:16/10;object-fit:cover;object-position:top}
 @media(max-width:600px){.gallery-2{grid-template-columns:1fr}}
 /* Lightbox overlay */
 .lightbox{position:fixed;inset:0;z-index:400;background:rgba(6,10,16,.92);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:40px;cursor:zoom-out}
