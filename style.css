@@ -198,6 +198,9 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
 .proj-card-thumb{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--card)}
 .proj-card-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
 .proj-card:hover .proj-card-thumb img{transform:scale(1.04)}
+/* Research/data charts: show the whole figure on white instead of cropping */
+.proj-card-thumb.chart{background:#fff}
+.proj-card-thumb.chart img{object-fit:contain;padding:10px}
 .proj-card-body{padding:28px}
 .proj-card-num{font-family:"Space Mono",monospace;font-size:10px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
 .proj-card-title{font-family:"Syne",sans-serif;font-size:22px;font-weight:800;margin-bottom:14px;line-height:1.2}
