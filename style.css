@@ -153,8 +153,11 @@ footer a:hover{color:var(--accent)}
 .resume-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
 .linkedin-preview{margin-top:64px}
 .linkedin-preview-label{font-family:"Space Mono",monospace;font-size:11px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
-.linkedin-badge-outer{display:flex;justify-content:center;align-items:center;padding:72px 40px;border:1px solid rgba(148,180,255,.18);border-radius:4px;background:var(--surface);min-height:420px}
-@media(max-width:900px){.resume-embed{height:500px}.linkedin-badge-outer{padding:48px 20px;min-height:320px}}
+.linkedin-badge-outer{display:flex;justify-content:center;align-items:center;padding:56px 40px;border:1px solid rgba(148,180,255,.18);border-radius:4px;background:var(--surface);min-height:340px}
+/* Fallback link shown if the third-party LinkedIn badge script is blocked */
+.badge-base__link{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);text-decoration:none;border:1px solid var(--accent);padding:14px 28px;transition:background .2s,color .2s}
+.badge-base__link:hover{background:rgba(79,135,250,.09);color:var(--text)}
+@media(max-width:900px){.resume-embed{height:500px}.linkedin-badge-outer{padding:40px 20px;min-height:280px}}
 
 /* ── Colorblind & accessibility improvements ── */
 /* Underline all text links so they're distinguishable without color */
@@ -217,6 +220,9 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
 .shot-fig .img-caption{border:1px solid var(--border);border-top:none;border-radius:0 0 9px 9px}
 .gallery-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;margin-top:4px}
 .gallery-2.gallery-cap .shot{aspect-ratio:16/10;object-fit:cover;object-position:top}
+/* Let the browser-frame URL label ellipsis engage so long URLs can't force
+   horizontal overflow (the flex/grid chain would otherwise refuse to shrink) */
+.project-images,.shot-fig,.browser-frame,.gallery-2{min-width:0}
 @media(max-width:600px){.gallery-2{grid-template-columns:1fr}}
 /* Lightbox overlay */
 .lightbox{position:fixed;inset:0;z-index:400;background:rgba(6,10,16,.92);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:40px;cursor:zoom-out}
