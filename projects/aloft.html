@@ -66,6 +66,16 @@
           <li>Enforced per-user privacy with Postgres Row-Level Security: every row is scoped to the owning account at the database layer, not just the UI.</li>
           <li>Shipped as a single-page app deployed on Vercel with Supabase handling auth, database, and serverless functions.</li>
         </ul>
+        <div class="project-role" style="margin-top:48px">Under the Hood</div>
+        <ul class="project-bullets">
+          <li>The entire frontend is one dependency-free HTML file (~3,600 lines) with a hand-rolled view router, an inline SVG icon system, and a two-mood theme (espresso dark / paper light) that follows the OS setting &mdash; Leaflet is the only vendored library, and Supabase (Postgres + GoTrue auth) is the only backend.</li>
+          <li>Ad-blocker-proof networking: Vercel rewrites <code>/sb/:path*</code> to the Supabase origin, and at boot the app health-checks that same-origin proxy and falls back to direct <code>*.supabase.co</code> &mdash; so browsers whose ad-blockers kill third-party Supabase requests still sign in.</li>
+          <li>The <em>flight-lookup</em> Edge Function is three services behind one endpoint: the AeroDataBox lookup normalised into the app's schema (choosing the flight segment whose local departure date matches the request), a Planespotters photo proxy (the API requires a custom User-Agent browsers can't set; returns multiple shots of the same tail so cards can rotate), and a Spotify embed-page parser that walks its <code>__NEXT_DATA__</code> JSON to extract track URIs for recap soundtracks.</li>
+          <li>Defense in depth on that function: even though its URL is public, it re-verifies the caller's JWT against Supabase auth before spending third-party API quota &mdash; anonymous or key-only requests get a 401, and the AeroDataBox key never leaves the server.</li>
+          <li>Times are stored as UTC instants (scheduled / estimated / actual for both legs) and rendered in each airport's own timezone; every API response is also kept as raw <code>jsonb</code> on the row, so records can be re-enriched later without a new lookup.</li>
+          <li>All analytics are computed client-side from the raw rows &mdash; haversine great-circle distances, delay minutes, leaderboards, trend charts, and the recap slide sequence &mdash; and the map draws great-circle polylines with line weight scaled to route frequency. No server-side aggregation exists at all.</li>
+          <li>Row-Level Security is the entire multi-user story: four policies (select / insert / update / delete), each keyed on <code>auth.uid() = user_id</code>, isolate every account's flights at the database layer.</li>
+        </ul>
         <div class="resume-actions" style="margin-top:36px">
           <a href="https://flighty-beta.vercel.app" class="btn btn-primary" target="_blank" rel="noopener">Launch Live App &rarr;</a>
         </div>
