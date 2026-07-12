@@ -18,8 +18,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 80px 72px;position:relative;z-index:2;border-right:1px solid var(--border)}
 .hero-tag{font-family:"Space Mono",monospace;font-size:11px;color:var(--accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:32px;display:flex;align-items:center;gap:14px;opacity:0;animation:fadeUp .7s .1s ease both}
 .hero-tag::before{content:"";display:block;width:32px;height:1px;background:var(--accent)}
-.hero-name{font-family:"Syne",sans-serif;font-size:clamp(64px,7.5vw,118px);font-weight:800;line-height:.92;letter-spacing:-.04em;margin-bottom:28px;opacity:0;animation:fadeUp .7s .2s ease both;color:var(--text)}
-.hero-name .blue{background:linear-gradient(135deg,var(--accent) 0%,#7eb8ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block;padding-bottom:.14em;margin-bottom:-.14em}
+.hero-name{font-family:"Syne",sans-serif;font-size:clamp(64px,7.5vw,118px);font-weight:800;line-height:1;letter-spacing:-.04em;margin-bottom:28px;opacity:0;animation:fadeUp .7s .2s ease both;color:var(--text)}
+/* line-height:1 keeps the "g" descender inside the line box so -webkit-background-clip:text
+   never crops it — the cross-browser-safe fix (Safari ignores padding on clipped text) */
+.hero-name .blue{background:linear-gradient(135deg,var(--accent) 0%,#7eb8ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-tagline{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:52px;opacity:0;animation:fadeUp .7s .35s ease both;display:flex;align-items:center;gap:12px}
 .hero-tagline::before{content:"";display:block;width:28px;height:1px;background:var(--muted)}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fadeUp .7s .5s ease both}
