@@ -137,14 +137,14 @@
       <div class="feat-block">
         <div class="feat-label">What I Built</div>
         <ul class="feat-list">
-          <li>48-field PostgreSQL flight schema: airports with IATA/ICAO codes, coordinates and timezones, scheduled vs. actual times, aircraft registration, seat, cabin, distance</li>
-          <li>Serverless flight-lookup Edge Function (TypeScript/Deno) that auto-fills a flight from airline + flight number + date via a live flight-data API</li>
-          <li>Interactive Leaflet world map of every route; per-user privacy enforced with Row-Level Security at the database layer</li>
+          <li>48-field PostgreSQL flight schema, filled by a serverless lookup Edge Function I've since iterated through 6 versions to enrich each flight with real aircraft photography, spec sheets, and destination guides</li>
+          <li>Interactive Leaflet route map, delay analytics, and leaderboards (top airports, airlines, aircraft, routes, countries) across 98 flights, 62 routes, and 32 airports</li>
+          <li>Animated "Wrapped"-style video recaps &mdash; an all-time lifetime recap plus yearly recaps that seal on December 31 &mdash; built on top of Row-Level-Security-scoped per-user data</li>
         </ul>
       </div>
       <div class="feat-block feat-outcome">
         <div class="feat-label">Outcome</div>
-        <p>Live in production on Vercel with 98 flights logged, auto-filled, and mapped to date &mdash; logging a flight takes seconds instead of a form-filling session.</p>
+        <p>Live in production on Vercel: 98 flights logged, auto-filled, and mapped, with a full stats dashboard, delay tracking, and animated yearly recaps turning the log into something worth revisiting.</p>
       </div>
     </div>
   </div>
@@ -170,14 +170,14 @@
       <div class="feat-block">
         <div class="feat-label">What I Built</div>
         <ul class="feat-list">
-          <li>9-table relational schema with three-tier role-based access (crew / staff / manager) enforced by Row-Level Security on every table</li>
-          <li>Recurring weekly availability with per-date overrides and academic-term awareness; shift-swap marketplace with a five-state approval workflow</li>
-          <li>Three serverless notification functions: shift-assignment alerts, open-shift broadcasts, and scheduled shift reminders</li>
+          <li>10-table relational schema &mdash; now including a dedicated absence-request workflow &mdash; with three-tier role-based access (crew / staff / manager) enforced by Row-Level Security on every table</li>
+          <li>Recurring availability with per-date overrides; five-state shift-swap marketplace; supervisor and split-shift designations with per-shift attendance tracking</li>
+          <li>Three serverless notification functions kept in sync as the workflow grew, plus international-crew work-hour compliance flagging</li>
         </ul>
       </div>
       <div class="feat-block feat-outcome">
         <div class="feat-label">Outcome</div>
-        <p>Live in production with 10 active users across three roles &mdash; availability, assignments, swaps, and time-off all run through one system with an audit trail.</p>
+        <p>Live in production with 10 active users across three roles &mdash; availability, assignments, swaps, attendance, and time-off all run through one system with a full audit trail.</p>
       </div>
     </div>
   </div>

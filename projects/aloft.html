@@ -32,11 +32,13 @@
       </div>
       <div>
         <div class="project-role">Full-Stack Developer &amp; Designer</div>
-        <p class="project-desc">Aloft is a personal flight logging web app I designed and built end-to-end: every flight I take is logged, mapped, and remembered. Type in an airline, flight number, and date, and the app auto-fills the rest &mdash; airports, terminals, gates, aircraft registration, scheduled versus actual times &mdash; via a live flight-data lookup. Flights render on an interactive world map, and the whole log is private to each account through Postgres Row-Level Security.</p>
+        <p class="project-desc">Aloft is a personal flight logging web app I designed and built end-to-end: every flight I take is logged, mapped, and remembered. Type in an airline, flight number, and date, and the app auto-fills the rest &mdash; airports, terminals, gates, aircraft registration, scheduled versus actual times &mdash; via a live flight-data lookup I've since iterated through six versions. Beyond logging, Aloft turns the data into a full analytics dashboard: route maps, delay tracking, top-airport/airline/aircraft leaderboards, and Spotify-Wrapped-style animated recaps of every year of flying. The whole log is private to each account through Postgres Row-Level Security.</p>
         <ul class="project-bullets">
           <li>Designed a 48-field PostgreSQL schema capturing the complete flight record: departure/arrival airports with IATA/ICAO codes, coordinates and timezones, scheduled/estimated/actual times, aircraft registration and type, seat, cabin, and route distance.</li>
-          <li>Built a serverless <em>flight-lookup</em> Edge Function (TypeScript/Deno on Supabase) that auto-fills flight details from a live flight-data API, so logging a flight takes seconds instead of a form-filling session.</li>
-          <li>Rendered flight routes on an interactive Leaflet world map &mdash; 98 flights logged and mapped to date.</li>
+          <li>Built and iterated a serverless <em>flight-lookup</em> Edge Function (TypeScript/Deno on Supabase) through six versions &mdash; auto-filling flight details from a live flight-data API and enriching each record with real aircraft photography, spec sheets (tail number, ICAO type, cruising speed, range), and destination city guides.</li>
+          <li>Rendered flight routes on an interactive Leaflet world map with year filtering &mdash; 98 flights logged and mapped to date, spanning 62 routes and 32 airports.</li>
+          <li>Built a boarding-pass-style stats dashboard (total flights, distance, flight time, airports, airlines) plus delay analytics tracking hours lost and average delay per flight.</li>
+          <li>Designed animated "Recap" videos in the style of Spotify Wrapped &mdash; a live all-time lifetime recap plus yearly recaps that seal on December 31 &mdash; alongside leaderboards (top airports, airlines, aircraft, routes, countries) and trend charts (flights per year, month, and weekday).</li>
           <li>Enforced per-user privacy with Postgres Row-Level Security: every row is scoped to the owning account at the database layer, not just the UI.</li>
           <li>Shipped as a single-page app deployed on Vercel with Supabase handling auth, database, and serverless functions.</li>
         </ul>
