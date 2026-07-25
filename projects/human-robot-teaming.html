@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; object-src 'self'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human-Robot Teaming Research - Dinuka Hannadige</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=5">
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo" style="text-decoration:none">Dinuka Hannadige</a>
+  <ul class="nav-links"><li><a href="../projects.html" style="color:var(--text)">Projects</a></li><li><a href="../index.html#skills">Skills</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#resume">Resume</a></li><li><a href="../index.html#contact">Contact</a></li></ul>
+</nav>
+
+<div class="project-detail-wrap">
+  <div class="project-block">
+    <div class="project-header">
+      <div class="project-num" style="color:var(--accent2)">R.02</div>
+      <h1 class="project-title">Human-Robot Teaming<br>Physiological Data Pipeline</h1>
+      <div class="project-meta">
+        <div class="project-year">2026 &ndash; Present</div>
+        <div class="project-team">CU Boulder &middot; SPUR</div>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-images">
+        <figure class="data-fig">
+          <img class="shot" src="../assets/hrt/session-eda.png" alt="Full-session skin conductance (EDA) with baseline and gameplay windows" loading="lazy">
+          <figcaption class="img-caption"><strong>Full-Session EDA &mdash; Rest vs. Gameplay Windows</strong><span>Skin-conductance across an entire session with the reconstructed 50-second rest baselines (green) and gameplay trials shaded. Rebuilding these windows when the marker was missing is what reclaimed seven WT01 sessions.</span></figcaption>
+        </figure>
+        <figure class="data-fig">
+          <img class="shot" src="../assets/hrt/ecg-trial.png" alt="Per-trial ECG waveform with detected heartbeats" loading="lazy">
+          <figcaption class="img-caption"><strong>Per-Trial ECG</strong><span>Cleaned ECG for a single trial. Every heartbeat is detected and turned into per-trial features &mdash; the raw material the initial-trust models are built from.</span></figcaption>
+        </figure>
+        <figure class="data-fig">
+          <img class="shot" src="../assets/hrt/rr-interval.png" alt="Per-trial RR-interval (heart-rate variability) series" loading="lazy">
+          <figcaption class="img-caption"><strong>RR-Interval &middot; Heart-Rate Variability</strong><span>Beat-to-beat intervals extracted from the ECG, the basis for heart-rate-variability features that track arousal and cognitive load during the task.</span></figcaption>
+        </figure>
+        <figure class="data-fig">
+          <img class="shot" src="../assets/hrt/eye-fixation.png" alt="Eye-tracking fixation duration on each game surface" loading="lazy">
+          <figcaption class="img-caption"><strong>Eye-Tracking &mdash; Fixation by Surface</strong><span>Gaze fixation duration on each interface surface (Order Manager, Telemetry Panel, Tablet Menu, Warehouse Floor, Bin) per trial &mdash; from the irregular-rate eye stream I fixed in the live viewer.</span></figcaption>
+        </figure>
+        <figure class="data-fig">
+          <img class="shot" src="../assets/hrt/fnirs.png" alt="fNIRS filtered hemoglobin concentration, baseline to gameplay" loading="lazy">
+          <figcaption class="img-caption"><strong>fNIRS &mdash; Filtered Hemoglobin</strong><span>Relative oxy/deoxy-hemoglobin concentration across the baseline&rarr;gameplay transition, the brain-activity channel alongside the peripheral physiology.</span></figcaption>
+        </figure>
+        <figure class="data-fig">
+          <img class="shot" src="../assets/hrt/pupil.png" alt="Cleaned pupil diameter, left/right/mean, across baseline and trial periods" loading="lazy">
+          <figcaption class="img-caption"><strong>Cleaned Pupil Diameter</strong><span>Left, right, and mean pupil diameter cleaned across baseline and trial periods &mdash; a pupillometry channel derived from the same eye-tracking stream.</span></figcaption>
+        </figure>
+      </div>
+      <div>
+        <div class="project-role" style="color:var(--accent2)">Undergraduate Researcher &middot; Physiological Signal Processing</div>
+        <div class="detail-stack"><span class="chip">Python</span><span class="chip">BIOPAC</span><span class="chip">ECG / HRV</span><span class="chip">EDA</span><span class="chip">Respiration</span><span class="chip">fNIRS</span><span class="chip">Eye-Tracking</span><span class="chip">Git</span></div>
+        <div class="metric-row"><div><div class="stat-num">7</div><div class="stat-label">Sessions reclaimed</div></div><div><div class="stat-num">0.998</div><div class="stat-label">Recovery correlation</div></div><div><div class="stat-num">~15 ms</div><div class="stat-label">Heartbeat match</div></div></div>
+        <p class="project-desc">A SPUR research study on human-robot teaming (the CATAPULT / CAREER project) at CU Boulder. I own the physiological data pipeline: taking raw BIOPAC recordings &mdash; ECG (heart), EDA (skin conductance), and respiration &mdash; through cleaning, beat and skin-response detection, per-trial feature extraction, and plotting for every runnable session. This work is the front end of Aim 1: the features I pull are exactly what the team's initial-trust models are built from, so the cleaner and more complete the data, the better those models can be.</p>
+        <ul class="project-bullets">
+          <li>Ran the full BIOPAC pipeline (ECG/heartbeat, EDA/skin response, respiration) for every runnable session &mdash; WT01 S3&ndash;11, WT03 S1&ndash;4, WT04 S1&ndash;2 &mdash; cleaning signals, detecting each beat and response, extracting per-trial features, and generating the plot decks.</li>
+          <li>Rebuilt the pipeline to survive real data: when a session was missing its rest-period marker, reconstructed the 50-second rest baseline by counting back from gameplay onset &mdash; reclaiming <strong>seven WT01 sessions</strong> that would otherwise have been discarded.</li>
+          <li>Wrote dead-recording recovery scripts that realign a backup recording to rebuild signals when the live BIOPAC stream flat-lined (WT01 S11, WT03 S03), and proved the method trustworthy by rerunning it on a known-good session (WT04 S01) &mdash; rebuilt signals matched the original at <strong>r&nbsp;=&nbsp;0.998</strong> for respiration and heartbeats within <strong>~15&nbsp;ms</strong>.</li>
+          <li>Hardened the pipeline against crashes (empty streams, short recordings, the skin-response step) and built a standalone BIOPAC-only runner so a session can be re-processed quickly.</li>
+          <li>Rebuilt the lab's live multi-stream viewer to show every sensor at once and tracked down two separate bugs blocking eye-tracking (an irregular-rate stream) and fNIRS &mdash; it now flags a stream the moment it stops, freezes, or drops, so problems are caught during a session instead of after.</li>
+          <li>Screened every session for data quality, flagged and documented the unprocessable ones (the S02/S10/S12 errors) so bad data never gets analyzed as if it were valid &mdash; knowing when data is unusable is a result in itself.</li>
+          <li>Delivered the WT01/WT03/WT04 plot decks to SharePoint, passed my first formal Git code reviews, iterated the SPUR presentation through mentor feedback, and help run the Traveling Trunks STEM-education outreach.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="other-projects">
+  <div class="other-projects-heading">Other Projects</div>
+  <div class="other-projects-grid">
+    <a href="../projects/pharmshed.html" class="proj-card">
+      <div class="proj-card-thumb chart"><img src="../assets/pharmshed/graph_insurance_income.png" alt="PharmShed research figure" loading="lazy"></div>
+      <div class="proj-card-body">
+        <div class="proj-card-num" style="color:var(--accent2)">R.01 / Research</div>
+        <div class="proj-card-title">PharmShed: Pharmaceutical Wastewater ML</div>
+        <div class="proj-card-tags"><span class="tag">CU Boulder</span><span class="tag" style="color:var(--accent2)">ML &amp; Data Engineering</span></div>
+        <div class="proj-card-year">2025 - 2026</div>
+        <div class="proj-card-cta">View Research</div>
+      </div>
+    </a>
+    <a href="../projects/aloft.html" class="proj-card">
+      <div class="proj-card-thumb"><img src="../assets/aloft/dashboard.webp" alt="Aloft personal flight log" loading="lazy"></div>
+      <div class="proj-card-body">
+        <div class="proj-card-num">S.01 / Software</div>
+        <div class="proj-card-title">Aloft &mdash; Personal Flight Log</div>
+        <div class="proj-card-tags"><span class="tag">Personal Project</span><span class="tag" style="color:var(--accent2)">Full-Stack Developer</span></div>
+        <div class="proj-card-year">2026</div>
+        <div class="proj-card-cta">View Project</div>
+      </div>
+    </a>
+    <a href="../projects/crew-scheduler.html" class="proj-card">
+      <div class="proj-card-thumb"><img src="../assets/crew/calendar.png" alt="Program Council Crew Scheduler" loading="lazy"></div>
+      <div class="proj-card-body">
+        <div class="proj-card-num">S.02 / Software</div>
+        <div class="proj-card-title">Program Council Crew Scheduler</div>
+        <div class="proj-card-tags"><span class="tag">CU Boulder Program Council</span><span class="tag" style="color:var(--accent2)">Full-Stack Developer</span></div>
+        <div class="proj-card-year">2026</div>
+        <div class="proj-card-cta">View Project</div>
+      </div>
+    </a>
+  </div>
+</section>
+<section id="contact" style="padding:80px 60px">
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-details-only">
+    <h3>Let's connect.</h3>
+    <p>I'm open to engineering opportunities, research collaborations, internships, or just connecting with fellow engineers.</p>
+    <div class="contact-details">
+      <div class="contact-item"><div class="contact-icon">✉</div><div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:Dinuka.Hannadige@outlook.com">Dinuka.Hannadige@outlook.com</a></div></div></div>
+      <div class="contact-item"><div class="contact-icon">☏</div><div><div class="ci-label">Phone</div><div class="ci-value">(386) 331-3306</div></div></div>
+      <div class="contact-item"><div class="contact-icon">◎</div><div><div class="ci-label">Location</div><div class="ci-value">Boulder, Colorado</div></div></div>
+      <div class="contact-item"><div class="contact-icon" style="font-size:10px;font-weight:700;">in</div><div><div class="ci-label">LinkedIn</div><div class="ci-value"><a href="https://www.linkedin.com/in/dinuka-hannadige" target="_blank" rel="noopener">linkedin.com/in/dinuka-hannadige</a></div></div></div><div class="contact-item"><div class="contact-icon" style="font-size:9px;font-weight:700;">GH</div><div><div class="ci-label">GitHub</div><div class="ci-value"><a href="https://github.com/diha7172" target="_blank" rel="noopener">github.com/diha7172</a></div></div></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>© 2026 Dinuka Hannadige · Aerospace Engineer</p>
+  <p><a href="https://github.com/diha7172" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/dinuka-hannadige" target="_blank" rel="noopener">LinkedIn</a> · Boulder, Colorado</p>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Figure viewer" hidden><button class="lightbox-close" aria-label="Close viewer">&times;</button><img alt=""><div class="lightbox-cap" id="lightbox-cap"></div></div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'), img=lb.querySelector('img'),
+      cap=document.getElementById('lightbox-cap'), closeBtn=lb.querySelector('.lightbox-close'), last=null;
+  function open(s){
+    last=s; img.src=s.currentSrc||s.src; img.alt=s.alt;
+    var fig=s.closest('.data-fig'), t=fig&&fig.querySelector('.img-caption strong');
+    cap.textContent=t?t.textContent:s.alt;
+    lb.hidden=false; document.body.style.overflow='hidden'; closeBtn.focus();
+  }
+  function close(){lb.hidden=true; img.src=''; document.body.style.overflow=''; if(last)last.focus();}
+  document.querySelectorAll('.shot').forEach(function(s){
+    s.setAttribute('role','button'); s.setAttribute('tabindex','0');
+    s.setAttribute('aria-label','Enlarge figure: '+s.alt);
+    s.addEventListener('click',function(){open(s);});
+    s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(s);}});
+  });
+  lb.addEventListener('click',function(e){if(e.target!==img)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)close();});
+})();
+</script>
+</body>
+</html>
