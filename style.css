@@ -225,6 +225,10 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{
 .shot-fig .img-caption{border:1px solid var(--border);border-top:none;border-radius:0 0 9px 9px}
 .gallery-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;margin-top:4px}
 .gallery-2.gallery-cap .shot{aspect-ratio:16/10;object-fit:cover;object-position:top}
+/* Research data figures: full plot on white, captioned, lightbox-zoomable */
+.data-fig{margin:0}
+.data-fig .shot{background:#fff;border:1px solid var(--border);border-bottom:none;border-radius:6px 6px 0 0}
+.data-fig .img-caption{border:1px solid var(--border);border-top:none;border-radius:0 0 6px 6px}
 /* Let the browser-frame URL label ellipsis engage so long URLs can't force
    horizontal overflow (the flex/grid chain would otherwise refuse to shrink) */
 .project-images,.shot-fig,.browser-frame,.gallery-2{min-width:0}
