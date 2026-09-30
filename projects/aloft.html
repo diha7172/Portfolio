@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; object-src 'self'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aloft — Personal Flight Log - Dinuka Hannadige</title>
+  <title>Aloft: Personal Flight Log - Dinuka Hannadige</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css?v=8">
 </head>
@@ -34,17 +34,17 @@
         <div class="gallery-2">
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>flighty-beta.vercel.app/recaps</em></div><img class="shot" width="2000" height="1047" src="../assets/aloft/recaps.webp" alt="Wrapped-Style Recaps" loading="lazy"></div>
-          <figcaption class="img-caption"><strong>Wrapped-Style Recaps</strong><span>A live all-time recap plus yearly recaps that seal on December 31 &mdash; a Spotify-Wrapped-style animated story of every year of flying.</span></figcaption>
+          <figcaption class="img-caption"><strong>Wrapped-Style Recaps</strong><span>A live all-time recap plus yearly recaps that seal on December 31, a Spotify-Wrapped-style animated story of every year of flying.</span></figcaption>
         </figure>
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>flighty-beta.vercel.app/flights</em></div><img class="shot" width="1767" height="1688" src="../assets/aloft/flights-list.png" alt="Flight Log" loading="lazy"></div>
-          <figcaption class="img-caption"><strong>Flight Log</strong><span>The full flight history grouped by month, each entry showing route, duration, distance, aircraft, seat, and status &mdash; mailbox-imported or manually added.</span></figcaption>
+          <figcaption class="img-caption"><strong>Flight Log</strong><span>The full flight history grouped by month, each entry showing route, duration, distance, aircraft, seat, and status, mailbox-imported or manually added.</span></figcaption>
         </figure>
         </div>
         <div class="gallery-2">
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>flighty-beta.vercel.app</em></div><img class="shot" width="1158" height="1461" src="../assets/aloft/flight-detail.webp" alt="Flight Detail" loading="lazy"></div>
-          <figcaption class="img-caption"><strong>Flight Detail</strong><span>A single flight rendered as a boarding pass with destination city imagery, live schedule, and aircraft badge &mdash; auto-filled from the flight-lookup Edge Function.</span></figcaption>
+          <figcaption class="img-caption"><strong>Flight Detail</strong><span>A single flight rendered as a boarding pass with destination city imagery, live schedule, and aircraft badge, auto-filled from the flight-lookup Edge Function.</span></figcaption>
         </figure>
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>flighty-beta.vercel.app</em></div><img class="shot" width="1373" height="1089" src="../assets/aloft/aircraft.png" alt="Aircraft & Destination" loading="lazy"></div>
@@ -53,28 +53,28 @@
         </div>
       </div>
       <div>
-        <p class="project-tldr">Designed and shipped a full-stack flight-logging web app — 98 flights auto-filled, mapped, and analyzed, live in production.</p>
+        <p class="project-tldr">Designed and shipped a full-stack flight-logging web app: 98 flights auto-filled, mapped, and analyzed, live in production.</p>
         <div class="project-role">Full-Stack Developer &amp; Designer</div>
         <div class="detail-stack"><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">PostgreSQL + RLS</span><span class="chip">Edge Functions</span><span class="chip">Leaflet Maps</span><span class="chip">Vercel</span></div>
         <div class="metric-row"><div><div class="stat-num">98</div><div class="stat-label">Flights logged</div></div><div><div class="stat-num">62</div><div class="stat-label">Routes</div></div><div><div class="stat-num">32</div><div class="stat-label">Airports</div></div><div><div class="stat-num">6</div><div class="stat-label">API versions</div></div></div>
-        <p class="project-desc">Aloft is a personal flight logging web app I designed and built end-to-end: every flight I take is logged, mapped, and remembered. Type in an airline, flight number, and date, and the app auto-fills the rest &mdash; airports, terminals, gates, aircraft registration, scheduled versus actual times &mdash; via a live flight-data lookup I've since iterated through six versions. Beyond logging, Aloft turns the data into a full analytics dashboard: route maps, delay tracking, top-airport/airline/aircraft leaderboards, and Spotify-Wrapped-style animated recaps of every year of flying. The whole log is private to each account through Postgres Row-Level Security.</p>
+        <p class="project-desc">Aloft is a personal flight logging web app I designed and built end-to-end: every flight I take is logged, mapped, and remembered. Type in an airline, flight number, and date, and the app auto-fills the rest (airports, terminals, gates, aircraft registration, scheduled versus actual times) via a live flight-data lookup I've since iterated through six versions. Beyond logging, Aloft turns the data into a full analytics dashboard: route maps, delay tracking, top-airport/airline/aircraft leaderboards, and Spotify-Wrapped-style animated recaps of every year of flying. The whole log is private to each account through Postgres Row-Level Security.</p>
         <ul class="project-bullets">
           <li>Designed a 48-field PostgreSQL schema capturing the complete flight record: departure/arrival airports with IATA/ICAO codes, coordinates and timezones, scheduled/estimated/actual times, aircraft registration and type, seat, cabin, and route distance.</li>
-          <li>Built and iterated a serverless <em>flight-lookup</em> Edge Function (TypeScript/Deno on Supabase) through six versions &mdash; auto-filling flight details from a live flight-data API and enriching each record with real aircraft photography, spec sheets (tail number, ICAO type, cruising speed, range), and destination city guides.</li>
-          <li>Rendered flight routes on an interactive Leaflet world map with year filtering &mdash; 98 flights logged and mapped to date, spanning 62 routes and 32 airports.</li>
+          <li>Built and iterated a serverless <em>flight-lookup</em> Edge Function (TypeScript/Deno on Supabase) through six versions, auto-filling flight details from a live flight-data API and enriching each record with real aircraft photography, spec sheets (tail number, ICAO type, cruising speed, range), and destination city guides.</li>
+          <li>Rendered flight routes on an interactive Leaflet world map with year filtering: 98 flights logged and mapped to date, spanning 62 routes and 32 airports.</li>
           <li>Built a boarding-pass-style stats dashboard (total flights, distance, flight time, airports, airlines) plus delay analytics tracking hours lost and average delay per flight.</li>
-          <li>Designed animated "Recap" videos in the style of Spotify Wrapped &mdash; a live all-time lifetime recap plus yearly recaps that seal on December 31 &mdash; alongside leaderboards (top airports, airlines, aircraft, routes, countries) and trend charts (flights per year, month, and weekday).</li>
+          <li>Designed animated "Recap" videos in the style of Spotify Wrapped (a live all-time lifetime recap plus yearly recaps that seal on December 31), alongside leaderboards (top airports, airlines, aircraft, routes, countries) and trend charts (flights per year, month, and weekday).</li>
           <li>Enforced per-user privacy with Postgres Row-Level Security: every row is scoped to the owning account at the database layer, not just the UI.</li>
           <li>Shipped as a single-page app deployed on Vercel with Supabase handling auth, database, and serverless functions.</li>
         </ul>
         <div class="project-role" style="margin-top:48px">Under the Hood</div>
         <ul class="project-bullets">
-          <li>The entire frontend is one dependency-free HTML file (~3,600 lines) with a hand-rolled view router, an inline SVG icon system, and a two-mood theme (espresso dark / paper light) that follows the OS setting &mdash; Leaflet is the only vendored library, and Supabase (Postgres + GoTrue auth) is the only backend.</li>
-          <li>Ad-blocker-proof networking: Vercel rewrites <code>/sb/:path*</code> to the Supabase origin, and at boot the app health-checks that same-origin proxy and falls back to direct <code>*.supabase.co</code> &mdash; so browsers whose ad-blockers kill third-party Supabase requests still sign in.</li>
+          <li>The entire frontend is one dependency-free HTML file (~3,600 lines) with a hand-rolled view router, an inline SVG icon system, and a two-mood theme (espresso dark / paper light) that follows the OS setting. Leaflet is the only vendored library, and Supabase (Postgres + GoTrue auth) is the only backend.</li>
+          <li>Ad-blocker-proof networking: Vercel rewrites <code>/sb/:path*</code> to the Supabase origin, and at boot the app health-checks that same-origin proxy and falls back to direct <code>*.supabase.co</code>, so browsers whose ad-blockers kill third-party Supabase requests still sign in.</li>
           <li>The <em>flight-lookup</em> Edge Function is three services behind one endpoint: the AeroDataBox lookup normalised into the app's schema (choosing the flight segment whose local departure date matches the request), a Planespotters photo proxy (the API requires a custom User-Agent browsers can't set; returns multiple shots of the same tail so cards can rotate), and a Spotify embed-page parser that walks its <code>__NEXT_DATA__</code> JSON to extract track URIs for recap soundtracks.</li>
-          <li>Defense in depth on that function: even though its URL is public, it re-verifies the caller's JWT against Supabase auth before spending third-party API quota &mdash; anonymous or key-only requests get a 401, and the AeroDataBox key never leaves the server.</li>
+          <li>Defense in depth on that function: even though its URL is public, it re-verifies the caller's JWT against Supabase auth before spending third-party API quota: anonymous or key-only requests get a 401, and the AeroDataBox key never leaves the server.</li>
           <li>Times are stored as UTC instants (scheduled / estimated / actual for both legs) and rendered in each airport's own timezone; every API response is also kept as raw <code>jsonb</code> on the row, so records can be re-enriched later without a new lookup.</li>
-          <li>All analytics are computed client-side from the raw rows &mdash; haversine great-circle distances, delay minutes, leaderboards, trend charts, and the recap slide sequence &mdash; and the map draws great-circle polylines with line weight scaled to route frequency. No server-side aggregation exists at all.</li>
+          <li>All analytics are computed client-side from the raw rows (haversine great-circle distances, delay minutes, leaderboards, trend charts, and the recap slide sequence), and the map draws great-circle polylines with line weight scaled to route frequency. No server-side aggregation exists at all.</li>
           <li>Row-Level Security is the entire multi-user story: four policies (select / insert / update / delete), each keyed on <code>auth.uid() = user_id</code>, isolate every account's flights at the database layer.</li>
         </ul>
         <div class="resume-actions" style="margin-top:36px">

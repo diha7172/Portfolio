@@ -21,7 +21,7 @@
       <div class="project-num">S.02</div>
       <h1 class="project-title">Program Council<br>Portal</h1>
       <div class="project-meta">
-        <div class="project-year">2026 &ndash; Present</div>
+        <div class="project-year">2026 - Present</div>
         <div class="project-team">CU Boulder Program Council</div>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <div class="project-images">
         <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>cu-pc-portal.vercel.app</em></div><img class="shot" width="1280" height="800" src="../assets/crew/portal-hub.png" alt="PC Portal hub: Production request or Crew Scheduler" loading="lazy"></div>
-          <figcaption class="img-caption"><strong>Portal Hub &mdash; One Front Door</strong><span>What started as a scheduler is now the organization's portal: student orgs and departments get an instant production quote and can track a booking with no account, while crew, staff, managers, and advisors sign in to schedule.</span></figcaption>
+          <figcaption class="img-caption"><strong>Portal Hub: One Front Door</strong><span>What started as a scheduler is now the organization's portal: student orgs and departments get an instant production quote and can track a booking with no account, while crew, staff, managers, and advisors sign in to schedule.</span></figcaption>
         </figure>
         <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>cu-pc-portal.vercel.app/calendar</em></div><img class="shot" width="2200" height="1800" src="../assets/crew/calendar.png" alt="Schedule Calendar" loading="lazy"></div>
@@ -42,7 +42,7 @@
         </figure>
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>cu-pc-portal.vercel.app/availability</em></div><img class="shot" width="2000" height="3550" src="../assets/crew/availability.png" alt="Crew Availability" loading="lazy"></div>
-          <figcaption class="img-caption"><strong>Crew Availability</strong><span>Crew set recurring weekly hours with per-day time blocks and specific-date overrides — the engine only assigns people who are actually free.</span></figcaption>
+          <figcaption class="img-caption"><strong>Crew Availability</strong><span>Crew set recurring weekly hours with per-day time blocks and specific-date overrides, so the engine only assigns people who are actually free.</span></figcaption>
         </figure>
         </div>
         <div class="gallery-2 gallery-cap">
@@ -58,7 +58,7 @@
         <div class="gallery-2 gallery-cap">
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>cu-pc-portal.vercel.app/notifications</em></div><img class="shot" width="1360" height="5354" src="../assets/crew/notifications.png" alt="Email Notifications" loading="lazy"></div>
-          <figcaption class="img-caption"><strong>Email Notifications</strong><span>Four serverless email templates — open-shift alerts, shift reminders, a weekly digest, and calendar invites for assigned shifts — sent from Supabase Edge Functions.</span></figcaption>
+          <figcaption class="img-caption"><strong>Email Notifications</strong><span>Four serverless email templates (open-shift alerts, shift reminders, a weekly digest, and calendar invites for assigned shifts) sent from Supabase Edge Functions.</span></figcaption>
         </figure>
           <figure class="shot-fig">
           <div class="browser-frame"><div class="bf-bar"><span></span><span></span><span></span><em>cu-pc-portal.vercel.app/availability</em></div><img class="shot" width="840" height="1760" src="../assets/crew/mobile.png" alt="Mobile Availability" loading="lazy"></div>
@@ -67,26 +67,26 @@
         </div>
       </div>
       <div>
-        <p class="project-tldr">Grew a crew scheduler into Program Council's full operations portal &mdash; auto-scheduling, a public quoting &amp; booking system with AI-assisted revisions, a queued email/calendar pipeline, and a geofenced QR time clock &mdash; 30 users, 34 tables, 597 emails sent.</p>
+        <p class="project-tldr">Grew a crew scheduler into Program Council's full operations portal: auto-scheduling, a public quoting &amp; booking system with AI-assisted revisions, a queued email/calendar pipeline, and a geofenced QR time clock. 30 users, 34 tables, 597 emails sent.</p>
         <div class="project-role">Full-Stack Developer &middot; Director of Operations</div>
         <div class="detail-stack"><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">PostgreSQL + RLS</span><span class="chip">Edge Functions</span><span class="chip">Cron Scheduler</span><span class="chip">iCal</span><span class="chip">Email Pipeline</span><span class="chip">Geofenced QR</span><span class="chip">AI-assisted</span><span class="chip">Vercel</span></div>
         <div class="metric-row"><div><div class="stat-num">34</div><div class="stat-label">Tables</div></div><div><div class="stat-num">30</div><div class="stat-label">Active users</div></div><div><div class="stat-num">6</div><div class="stat-label">Roles</div></div><div><div class="stat-num">597</div><div class="stat-label">Emails sent</div></div></div>
-        <p class="project-desc">As Director of Operations for CU Boulder&rsquo;s Program Council, I built &mdash; and keep building &mdash; the portal the organization runs on. What began as a crew scheduler is now one front door for everyone: student orgs, departments, and external clients get an instant production quote and can track a booking without an account, while crew, staff, managers, and advisors sign in to schedule. Behind it, a weekly auto-scheduler fills shifts from real availability, a queued email and calendar pipeline keeps everyone informed, and a geofenced QR time clock is rolling out.</p>
+        <p class="project-desc">As Director of Operations for CU Boulder&rsquo;s Program Council, I built, and keep building, the portal the organization runs on. What began as a crew scheduler is now one front door for everyone: student orgs, departments, and external clients get an instant production quote and can track a booking without an account, while crew, staff, managers, and advisors sign in to schedule. Behind it, a weekly auto-scheduler fills shifts from real availability, a queued email and calendar pipeline keeps everyone informed, and a geofenced QR time clock is rolling out.</p>
         <ul class="project-bullets">
-          <li>Built a weekly <strong>auto-scheduler</strong>: cron-driven runs with retry (running &rarr; succeeded / retrying / failed), decline memory so someone who stepped off an event is never placed back on it, weekly commitments with an office-hours fallback, and automated Saturday availability asks &mdash; every shift tagged by how it came about (auto / pickup / override / supervisor).</li>
-          <li>Built a <strong>production quoting &amp; booking system</strong>: a 27-item priced catalog and 9 bundles, instant quotes with line items, discount and tax math, booking reference codes, a five-state review flow, change requests, and a price-change audit log &mdash; open to RSOs, departments, and external clients with no account required.</li>
+          <li>Built a weekly <strong>auto-scheduler</strong>: cron-driven runs with retry (running &rarr; succeeded / retrying / failed), decline memory so someone who stepped off an event is never placed back on it, weekly commitments with an office-hours fallback, and automated Saturday availability asks, with every shift tagged by how it came about (auto / pickup / override / supervisor).</li>
+          <li>Built a <strong>production quoting &amp; booking system</strong>: a 27-item priced catalog and 9 bundles, instant quotes with line items, discount and tax math, booking reference codes, a five-state review flow, change requests, and a price-change audit log, open to RSOs, departments, and external clients with no account required.</li>
           <li>Added <strong>AI-assisted request revisions</strong>: a <code>suggest-request-fix</code> Edge Function proposes fixes to a booking, and every revision is tracked with its source (manual / AI / auto), the model used, and a proposed &rarr; applied / denied / superseded lifecycle so a manager always has the final say.</li>
-          <li>Engineered a <strong>reliable email + calendar pipeline</strong>: a queued outbox (attempts, last error, attachments) drained by a <code>send-outbox</code> function; per-shift and per-event notices, weekly digests, and asks guarded by primary-key claims so a retry or a racing cron can never double-send; and iCal <code>SEQUENCE</code> tracking per person per event so a calendar never drops a newer invite as stale &mdash; <strong>597 emails</strong> delivered to date.</li>
+          <li>Engineered a <strong>reliable email + calendar pipeline</strong>: a queued outbox (attempts, last error, attachments) drained by a <code>send-outbox</code> function; per-shift and per-event notices, weekly digests, and asks guarded by primary-key claims so a retry or a racing cron can never double-send; and iCal <code>SEQUENCE</code> tracking per person per event so a calendar never drops a newer invite as stale. <strong>597 emails</strong> delivered to date.</li>
           <li>Rolled out a <strong>geofenced QR time clock</strong>: QR clock-in with GPS distance and accuracy checks, auto-close and capping, office vs. shift blocks, a rotating-code kiosk role, emailed period summaries, and unscheduled entries routed to manager review.</li>
           <li>Extended the RLS model to <strong>six roles</strong> (crew / staff / manager / client / advisor / kiosk) with on-leave and department attributes, shift archiving with hours worked, drop-vs-swap coverage requests, supervisor and split shifts, and international work-hour compliance flags.</li>
-          <li>Scaled from <strong>10 to 30 active users</strong> and from 9 to 34 tables while staying in production the whole time; the original notification functions have been iterated 14&ndash;22 revisions each as the workflow grew.</li>
+          <li>Scaled from <strong>10 to 30 active users</strong> and from 9 to 34 tables while staying in production the whole time; the original notification functions have been iterated 14-22 revisions each as the workflow grew.</li>
         </ul>
         <div class="project-role" style="margin-top:48px">Under the Hood</div>
         <ul class="project-bullets">
-          <li>The trust model is anon-key-plus-RLS: the frontend ships only Supabase's public key, and every authorization decision lives in Postgres. A <code>SECURITY DEFINER</code> trigger on <code>auth.users</code> assigns roles at signup server-side &mdash; crew and staff freely, manager only if the submitted code matches one stored in a config table with RLS enabled and deliberately zero policies, so no client can ever read it.</li>
-          <li>Open-shift pickup is race-safe at the database layer: a <code>BEFORE INSERT</code> trigger takes a <code>SELECT &hellip; FOR UPDATE</code> row lock on the event, so two people tapping the last spot at the same instant can't both win &mdash; one gets the shift, the other gets "this shift just filled up." A <code>unique(event_id, user_id)</code> constraint separately blocks double-claiming.</li>
-          <li>The swap state machine runs entirely through server-side RPCs: <code>claim_swap()</code> moves open &rarr; pending under a row lock while rejecting self-covers and people already on the event, and <code>review_swap()</code> atomically reassigns the underlying shift row on approval &mdash; so a shift can never change hands without a manager's decision, no matter what the client sends.</li>
-          <li>Availability resolves through a strict precedence chain &mdash; approved time off, then single-date overrides, then weekly rules filtered by weekday and term date range &mdash; classifying each person as covered, partial, or unavailable for an event's exact time window. Auto-assign fills only fully-covered crew, sorted fewest-shifts-first for fairness, and is position-aware when an event defines a per-role breakdown (e.g. 2 Leads + 3 General).</li>
+          <li>The trust model is anon-key-plus-RLS: the frontend ships only Supabase's public key, and every authorization decision lives in Postgres. A <code>SECURITY DEFINER</code> trigger on <code>auth.users</code> assigns roles at signup server-side: crew and staff freely, manager only if the submitted code matches one stored in a config table with RLS enabled and deliberately zero policies, so no client can ever read it.</li>
+          <li>Open-shift pickup is race-safe at the database layer: a <code>BEFORE INSERT</code> trigger takes a <code>SELECT &hellip; FOR UPDATE</code> row lock on the event, so two people tapping the last spot at the same instant can't both win: one gets the shift, the other gets "this shift just filled up." A <code>unique(event_id, user_id)</code> constraint separately blocks double-claiming.</li>
+          <li>The swap state machine runs entirely through server-side RPCs: <code>claim_swap()</code> moves open &rarr; pending under a row lock while rejecting self-covers and people already on the event, and <code>review_swap()</code> atomically reassigns the underlying shift row on approval, so a shift can never change hands without a manager's decision, no matter what the client sends.</li>
+          <li>Availability resolves through a strict precedence chain (approved time off, then single-date overrides, then weekly rules filtered by weekday and term date range), classifying each person as covered, partial, or unavailable for an event's exact time window. Auto-assign fills only fully-covered crew, sorted fewest-shifts-first for fairness, and is position-aware when an event defines a per-role breakdown (e.g. 2 Leads + 3 General).</li>
           <li>Notifications are Database Webhooks &rarr; Deno Edge Functions: an insert on <code>shifts</code> triggers a hand-built iCalendar <code>METHOD:REQUEST</code> invite emailed to the assignee with all managers CC'd, and flipping an event to open-for-pickup broadcasts to every eligible person (BCC'd for privacy). A third function, guarded by a shared cron secret, sends day-before reminders and weekly digests on a pg_cron schedule. All three exit cleanly until SMTP secrets are set, so email is purely additive.</li>
         </ul>
         <div class="resume-actions" style="margin-top:36px">
@@ -104,7 +104,7 @@
   <div class="proj-card-thumb"><img src="../assets/aloft/dashboard.webp" alt="Aloft personal flight log" loading="lazy"></div>
   <div class="proj-card-body">
     <div class="proj-card-num">S.01 / Software</div>
-    <div class="proj-card-title">Aloft &mdash; Personal Flight Log</div>
+    <div class="proj-card-title">Aloft: Personal Flight Log</div>
     <div class="proj-card-tags"><span class="tag">Personal Project</span><span class="tag" style="color:var(--accent2)">Full-Stack Developer</span></div>
     <div class="proj-card-year">2026</div>
     <div class="proj-card-cta">View Project</div>

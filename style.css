@@ -21,7 +21,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .hero-tag::before{content:"";display:block;width:28px;height:2px;background:var(--accent);flex-shrink:0}
 .hero-name{font-family:"Syne",sans-serif;font-size:clamp(56px,6.6vw,96px);font-weight:800;line-height:1;letter-spacing:-.04em;margin-bottom:22px;opacity:0;animation:fadeUp .7s .2s ease both;color:var(--text)}
 .hero-name .blue{background:linear-gradient(135deg,#2563eb 0%,#4f87fa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-/* Plain-language positioning line — the single most important recruiter fact */
+/* Plain-language positioning line: the single most important recruiter fact */
 .hero-lede{font-size:21px;line-height:1.5;color:var(--dim);max-width:32ch;margin-bottom:34px;opacity:0;animation:fadeUp .7s .32s ease both}
 .hero-lede strong{color:var(--text);font-weight:600}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .7s .5s ease both}
