@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Human-Robot Teaming Research - Dinuka Hannadige</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=7">
+  <link rel="stylesheet" href="../style.css?v=8">
 </head>
 <body>
 <nav>
@@ -21,7 +21,7 @@
       <div class="project-num" style="color:var(--accent2)">R.02</div>
       <h1 class="project-title">Human-Robot Teaming<br>Physiological Data Pipeline</h1>
       <div class="project-meta">
-        <div class="project-year">2026 &ndash; Present</div>
+        <div class="project-year">2026 - Present</div>
         <div class="project-team">CU Boulder &middot; SPUR</div>
       </div>
     </div>
@@ -29,11 +29,11 @@
       <div class="project-images">
         <figure class="data-fig">
           <img class="shot" src="../assets/hrt/session-eda.png" alt="Full-session skin conductance (EDA) with baseline and gameplay windows" loading="lazy">
-          <figcaption class="img-caption"><strong>Full-Session EDA &mdash; Rest vs. Gameplay Windows</strong><span>Skin-conductance across an entire session with the reconstructed 50-second rest baselines (green) and gameplay trials shaded. Rebuilding these windows when the marker was missing is what reclaimed seven WT01 sessions.</span></figcaption>
+          <figcaption class="img-caption"><strong>Full-Session EDA: Rest vs. Gameplay Windows</strong><span>Skin-conductance across an entire session with the reconstructed 50-second rest baselines (green) and gameplay trials shaded. Rebuilding these windows when the marker was missing is what reclaimed seven WT01 sessions.</span></figcaption>
         </figure>
         <figure class="data-fig">
           <img class="shot" src="../assets/hrt/ecg-trial.png" alt="Per-trial ECG waveform with detected heartbeats" loading="lazy">
-          <figcaption class="img-caption"><strong>Per-Trial ECG</strong><span>Cleaned ECG for a single trial. Every heartbeat is detected and turned into per-trial features &mdash; the raw material the initial-trust models are built from.</span></figcaption>
+          <figcaption class="img-caption"><strong>Per-Trial ECG</strong><span>Cleaned ECG for a single trial. Every heartbeat is detected and turned into per-trial features, the raw material the initial-trust models are built from.</span></figcaption>
         </figure>
         <figure class="data-fig">
           <img class="shot" src="../assets/hrt/rr-interval.png" alt="Per-trial RR-interval (heart-rate variability) series" loading="lazy">
@@ -41,30 +41,30 @@
         </figure>
         <figure class="data-fig">
           <img class="shot" src="../assets/hrt/eye-fixation.png" alt="Eye-tracking fixation duration on each game surface" loading="lazy">
-          <figcaption class="img-caption"><strong>Eye-Tracking &mdash; Fixation by Surface</strong><span>Gaze fixation duration on each interface surface (Order Manager, Telemetry Panel, Tablet Menu, Warehouse Floor, Bin) per trial &mdash; from the irregular-rate eye stream I fixed in the live viewer.</span></figcaption>
+          <figcaption class="img-caption"><strong>Eye-Tracking: Fixation by Surface</strong><span>Gaze fixation duration on each interface surface (Order Manager, Telemetry Panel, Tablet Menu, Warehouse Floor, Bin) per trial, from the irregular-rate eye stream I fixed in the live viewer.</span></figcaption>
         </figure>
         <figure class="data-fig">
           <img class="shot" src="../assets/hrt/fnirs.png" alt="fNIRS filtered hemoglobin concentration, baseline to gameplay" loading="lazy">
-          <figcaption class="img-caption"><strong>fNIRS &mdash; Filtered Hemoglobin</strong><span>Relative oxy/deoxy-hemoglobin concentration across the baseline&rarr;gameplay transition, the brain-activity channel alongside the peripheral physiology.</span></figcaption>
+          <figcaption class="img-caption"><strong>fNIRS: Filtered Hemoglobin</strong><span>Relative oxy/deoxy-hemoglobin concentration across the baseline&rarr;gameplay transition, the brain-activity channel alongside the peripheral physiology.</span></figcaption>
         </figure>
         <figure class="data-fig">
           <img class="shot" src="../assets/hrt/pupil.png" alt="Cleaned pupil diameter, left/right/mean, across baseline and trial periods" loading="lazy">
-          <figcaption class="img-caption"><strong>Cleaned Pupil Diameter</strong><span>Left, right, and mean pupil diameter cleaned across baseline and trial periods &mdash; a pupillometry channel derived from the same eye-tracking stream.</span></figcaption>
+          <figcaption class="img-caption"><strong>Cleaned Pupil Diameter</strong><span>Left, right, and mean pupil diameter cleaned across baseline and trial periods, a pupillometry channel derived from the same eye-tracking stream.</span></figcaption>
         </figure>
       </div>
       <div>
-        <p class="project-tldr">Built the physiological-data pipeline for a human-robot trust study — recovered 7 lost sessions and validated signal recovery to r&nbsp;=&nbsp;0.998.</p>
+        <p class="project-tldr">Built the physiological-data pipeline for a human-robot trust study: recovered 7 lost sessions and validated signal recovery to r&nbsp;=&nbsp;0.998.</p>
         <div class="project-role" style="color:var(--accent2)">Undergraduate Researcher &middot; Physiological Signal Processing</div>
         <div class="detail-stack"><span class="chip">Python</span><span class="chip">BIOPAC</span><span class="chip">ECG / HRV</span><span class="chip">EDA</span><span class="chip">Respiration</span><span class="chip">fNIRS</span><span class="chip">Eye-Tracking</span><span class="chip">Git</span></div>
         <div class="metric-row"><div><div class="stat-num">7</div><div class="stat-label">Sessions reclaimed</div></div><div><div class="stat-num">0.998</div><div class="stat-label">Recovery correlation</div></div><div><div class="stat-num">~15 ms</div><div class="stat-label">Heartbeat match</div></div></div>
-        <p class="project-desc">A SPUR research study on human-robot teaming (the CATAPULT / CAREER project) at CU Boulder. I own the physiological data pipeline: taking raw BIOPAC recordings &mdash; ECG (heart), EDA (skin conductance), and respiration &mdash; through cleaning, beat and skin-response detection, per-trial feature extraction, and plotting for every runnable session. This work is the front end of Aim 1: the features I pull are exactly what the team's initial-trust models are built from, so the cleaner and more complete the data, the better those models can be.</p>
+        <p class="project-desc">A SPUR research study on human-robot teaming (the CATAPULT / CAREER project) at CU Boulder. I own the physiological data pipeline: taking raw BIOPAC recordings of ECG (heart), EDA (skin conductance), and respiration through cleaning, beat and skin-response detection, per-trial feature extraction, and plotting for every runnable session. This work is the front end of Aim 1: the features I pull are exactly what the team's initial-trust models are built from, so the cleaner and more complete the data, the better those models can be.</p>
         <ul class="project-bullets">
-          <li>Ran the full BIOPAC pipeline (ECG/heartbeat, EDA/skin response, respiration) for every runnable session &mdash; WT01 S3&ndash;11, WT03 S1&ndash;4, WT04 S1&ndash;2 &mdash; cleaning signals, detecting each beat and response, extracting per-trial features, and generating the plot decks.</li>
-          <li>Rebuilt the pipeline to survive real data: when a session was missing its rest-period marker, reconstructed the 50-second rest baseline by counting back from gameplay onset &mdash; reclaiming <strong>seven WT01 sessions</strong> that would otherwise have been discarded.</li>
-          <li>Wrote dead-recording recovery scripts that realign a backup recording to rebuild signals when the live BIOPAC stream flat-lined (WT01 S11, WT03 S03), and proved the method trustworthy by rerunning it on a known-good session (WT04 S01) &mdash; rebuilt signals matched the original at <strong>r&nbsp;=&nbsp;0.998</strong> for respiration and heartbeats within <strong>~15&nbsp;ms</strong>.</li>
+          <li>Ran the full BIOPAC pipeline (ECG/heartbeat, EDA/skin response, respiration) for every runnable session (WT01 S3-11, WT03 S1-4, WT04 S1-2), cleaning signals, detecting each beat and response, extracting per-trial features, and generating the plot decks.</li>
+          <li>Rebuilt the pipeline to survive real data: when a session was missing its rest-period marker, reconstructed the 50-second rest baseline by counting back from gameplay onset, reclaiming <strong>seven WT01 sessions</strong> that would otherwise have been discarded.</li>
+          <li>Wrote dead-recording recovery scripts that realign a backup recording to rebuild signals when the live BIOPAC stream flat-lined (WT01 S11, WT03 S03), and proved the method trustworthy by rerunning it on a known-good session (WT04 S01): rebuilt signals matched the original at <strong>r&nbsp;=&nbsp;0.998</strong> for respiration and heartbeats within <strong>~15&nbsp;ms</strong>.</li>
           <li>Hardened the pipeline against crashes (empty streams, short recordings, the skin-response step) and built a standalone BIOPAC-only runner so a session can be re-processed quickly.</li>
-          <li>Rebuilt the lab's live multi-stream viewer to show every sensor at once and tracked down two separate bugs blocking eye-tracking (an irregular-rate stream) and fNIRS &mdash; it now flags a stream the moment it stops, freezes, or drops, so problems are caught during a session instead of after.</li>
-          <li>Screened every session for data quality, flagged and documented the unprocessable ones (the S02/S10/S12 errors) so bad data never gets analyzed as if it were valid &mdash; knowing when data is unusable is a result in itself.</li>
+          <li>Rebuilt the lab's live multi-stream viewer to show every sensor at once and tracked down two separate bugs blocking eye-tracking (an irregular-rate stream) and fNIRS. It now flags a stream the moment it stops, freezes, or drops, so problems are caught during a session instead of after.</li>
+          <li>Screened every session for data quality, flagged and documented the unprocessable ones (the S02/S10/S12 errors) so bad data never gets analyzed as if it were valid. Knowing when data is unusable is a result in itself.</li>
           <li>Delivered the WT01/WT03/WT04 plot decks to SharePoint, passed my first formal Git code reviews, iterated the SPUR presentation through mentor feedback, and help run the Traveling Trunks STEM-education outreach.</li>
         </ul>
       </div>
@@ -89,17 +89,17 @@
       <div class="proj-card-thumb"><img src="../assets/aloft/dashboard.webp" alt="Aloft personal flight log" loading="lazy"></div>
       <div class="proj-card-body">
         <div class="proj-card-num">S.01 / Software</div>
-        <div class="proj-card-title">Aloft &mdash; Personal Flight Log</div>
+        <div class="proj-card-title">Aloft: Personal Flight Log</div>
         <div class="proj-card-tags"><span class="tag">Personal Project</span><span class="tag" style="color:var(--accent2)">Full-Stack Developer</span></div>
         <div class="proj-card-year">2026</div>
         <div class="proj-card-cta">View Project</div>
       </div>
     </a>
     <a href="../projects/crew-scheduler.html" class="proj-card">
-      <div class="proj-card-thumb"><img src="../assets/crew/calendar.png" alt="Program Council Crew Scheduler" loading="lazy"></div>
+      <div class="proj-card-thumb"><img src="../assets/crew/portal-hub.png" alt="Program Council Crew Scheduler" loading="lazy"></div>
       <div class="proj-card-body">
         <div class="proj-card-num">S.02 / Software</div>
-        <div class="proj-card-title">Program Council Crew Scheduler</div>
+        <div class="proj-card-title">Program Council Portal</div>
         <div class="proj-card-tags"><span class="tag">CU Boulder Program Council</span><span class="tag" style="color:var(--accent2)">Full-Stack Developer</span></div>
         <div class="proj-card-year">2026</div>
         <div class="proj-card-cta">View Project</div>
